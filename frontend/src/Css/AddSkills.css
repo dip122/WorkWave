@@ -1,0 +1,108 @@
+.addskills{
+    padding : 20px;
+    background-color :cornsilk;
+    height : 100%;
+    overflow-x: hidden;
+    width : 100%;
+    display : flex;
+    flex-direction : column;
+    text-align : center
+}
+.addskills .header{
+    text-align : center;
+    font-weight : bold;
+    font-size : 15px;
+    margin-bottom: 15px;;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.addskills .skills-options {
+    display : grid;
+    grid-template-columns: repeat(6,1fr);
+    gap : 6px;
+    background-color: aquamarine;
+    padding : 20px;
+    margin-top : -10px;
+}
+.addskills .skills-options button{
+    height : 40px;
+    background-color: #00bfff;
+}
+.addskills .myskills .header{
+    font-weight : 600;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top : 10px;
+    margin-bottom: 20px;
+}
+.addskills .myskills .skills-options{
+    display : grid;
+    grid-template-columns: repeat(6,1fr);
+    gap : 6px;
+    background-color: aquamarine;
+    padding : 20px;
+    margin-top : -10px;
+}
+.addskills form{
+    padding : 20px;
+}
+.addskills form button{
+    width : 40%;
+    margin-left : 6px;
+    color : rgb(233,249,255);
+    background-color : #2A811D;
+    font-size : 15px;
+    text-transform: uppercase;
+}
+.addskills form button:hover{
+    background-color : #2AAB17;
+    font-weight : 600;
+    border : 1px solid green;
+}
+
+@media(max-width: 1200px){
+    .addskills .skills-options{
+        display : grid;
+        grid-template-columns: repeat(5,1fr);
+        gap : 6px;
+    }
+    .addskills .myskills .skills-options{
+        display : grid;
+        grid-template-columns: repeat(5,1fr);
+        gap : 6px;
+    }
+}
+@media(max-width: 1093px){
+    .addskills .skills-options{
+        display : grid;
+        grid-template-columns: repeat(4,1fr);
+        gap : 6px;
+    }
+    .addskills .myskills .skills-options{
+        display : grid;
+        grid-template-columns: repeat(4,1fr);
+        gap : 6px;
+    }
+}
+@media(max-width: 680px){
+    .addskills .skills-options{
+        display : grid;
+        grid-template-columns: repeat(3,1fr);
+        gap : 6px;
+    }
+    .addskills .myskills .skills-options{
+        display : grid;
+        grid-template-columns: repeat(3,1fr);
+        gap : 6px;
+    }
+}
+@media(max-width: 470px){
+    .addskills .skills-options{
+        display : grid;
+        grid-template-columns: repeat(2,1fr);
+        gap : 6px;
+    }
+    .addskills .myskills .skills-options{
+        display : grid;
+        grid-template-columns: repeat(2,1fr);
+        gap : 6px;
+    }
+}

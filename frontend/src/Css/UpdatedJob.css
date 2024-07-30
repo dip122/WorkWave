@@ -1,0 +1,109 @@
+.updated-jobs{
+    height : 100vh;
+    padding : 50px 20px;
+    background-color: aliceblue;
+    background-image: url('image8.jpg');
+    background-size : cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+.updated-jobs .container {
+    display : flex;
+    flex-direction: column;
+    align-items: center;
+    margin : 0 auto;
+    /* min-width: 1300; */
+    max-width: 1300;
+    gap : 30px;
+}
+.updated-jobs .container .header {
+    font-size : 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight : bold;
+}
+.updated-jobs .container .banner {
+    display : flex;
+    flex-direction: column;
+    justify-content : center;
+    gap : 10px;
+    width : 75%;
+    align-items: center;
+    text-align: center;
+    background : #fff; 
+    border-radius: 20px;
+}
+.updated-jobs .container .banner .title{
+    display : grid;
+    grid-template-columns: repeat(2,1fr);
+    gap : 15px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.updated-jobs .container .banner .title span{
+    font-size : 15px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight : 600;
+    margin-top : 10px;
+}
+.updated-jobs .container .banner .title input,textarea{
+    padding : 5px;
+    font-size : 14px;
+    outline : none;
+    border : none;
+    width : 250px;
+}
+.updated-jobs .container .banner .title input[type = "text"]{
+    color : gray;
+    font-weight: 600;
+}
+.updated-jobs .container .banner .button-cl{
+    width : 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.updated-jobs .container .banner .button-cl button{
+    width : 30%;
+    margin-bottom: 20px;
+    background-color : #2d5649;
+    font-weight : 600;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color : white
+}
+
+@media(max-width: 600px){
+    .updated-jobs .container .banner{
+        width : 90%;
+    }
+    .updated-jobs{
+        padding : 20px 10px;
+    }
+}
+@media(max-width: 470px){
+    .updated-jobs{
+        padding : 10px 5px;
+    }
+    .updated-jobs .container .banner{
+        width : 100%;
+    }
+    .updated-jobs .container .banner .title input,textarea{
+        font-size : 12px;
+        width : 200px;
+    }
+}
+@media(max-width: 405px){
+    .updated-jobs .container .banner .title span{
+        font-size : 13px;
+    }
+    .updated-jobs .container .banner .title input,textarea{
+        font-size : 12px;
+        width : 180px;
+    }
+    .updated-jobs{
+        padding : 10px 0px;
+    }
+    .updated-jobs .container .banner{
+        width : 110%;
+    }
+}

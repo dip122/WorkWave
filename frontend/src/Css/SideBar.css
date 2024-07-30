@@ -1,0 +1,97 @@
+/* Sidebar.css */
+  
+.container-sidebar {
+    display: flex;
+    height: 100vh; /* Ensure the container takes up the full viewport height */
+    background-color : aliceblue;
+  }
+  
+  .container-sidebar .sidebar {
+    width: 20%;
+    border-radius: 3px;
+    padding : 2px;
+    background-image : url('job_image.jfif');
+    background-size : cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    border-right : 2px solid rgb(2, 106, 10);
+    border-top: 1.5px solid rgb(2, 106, 10);
+    border-bottom: 1.5px solid rgb(2, 106, 10);
+  }
+  
+  .container-sidebar .header {
+    display: flex;
+    align-items: center;
+    margin-right : 20px;
+  }
+
+  .container-sidebar .header .image-sidebar{
+    margin-top : 30px;
+    margin-left : 25px;
+    margin-right : 10px;
+  }
+  .container-sidebar .header .name{
+    font-size : 20px;
+    font-weight : 600;
+    font-family  :'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+  }
+  
+  .container-sidebar .header img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin-right: 10px;
+  }
+  
+  .container-sidebar .sidebar .others {
+    display : flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top : 30px;
+  }
+  
+  .container-sidebar .sidebar .others .Lists {
+    padding : 12px;
+    font-size : 15px;
+    width : 100%;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight : 590;
+  }
+  
+  .container-sidebar .sidebar .others .Lists:hover {
+    background-color: #3399FF;
+    cursor: pointer;
+    font-weight : bold;
+    transition: 0.3s linear;
+  }
+  
+  .container-sidebar .content {
+    width : 80%;
+    flex : 1;
+    /* margin-left : 2px; */
+  }
+  
+  @media (max-width: 768px) {
+    .container-sidebar {
+      flex-direction: column;
+    }
+  
+    .container-sidebar .sidebar {
+      width: 100%;
+      border-right: none;
+      border-bottom: 1px solid #ddd;
+      min-height: 370px;
+    }
+    .container-sidebar .sidebar .header img{
+        width : 80px;
+    }
+  
+    .container-sidebar .content {
+      flex: none;
+      width: 100%;
+    }
+  }
+  ::-webkit-scrollbar {
+    display: none;
+  }

@@ -1,0 +1,73 @@
+.companies-details{
+    padding : 50px 0;
+    background-color: antiquewhite;
+}
+.companies-details .companies{
+    display : flex;
+    justify-content: center;
+    flex-direction: column;
+    gap : 40px;
+    align-items: center;
+    margin : 0 auto;
+}
+
+.companies-details .companies .heading{
+    font-size : 30px;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.companies-details .companies .banner{
+    display : flex;
+    justify-content: space-between;
+    gap : 35px;
+    padding : 50px;
+    flex-wrap : wrap;
+}
+
+.companies-details .companies .banner .card{
+    width : 250px;
+    display : flex;
+    flex-direction: column;
+    align-items: center;
+    background : #fff;
+    padding : 20px;
+    gap : 15px;
+}
+
+
+.companies-details .companies .banner .card .icon-images img{
+    height : 50px;
+    width : 70px;
+}
+.companies-details .companies .banner .card .texts .firstp{
+    font-size : 13px;
+    font-weight: 600;;
+}
+.companies-details .companies .banner .card .texts .secondp{
+    font-size : 10px;
+    font-weight: 400;
+}
+
+.companies-details .companies .banner .card:hover{
+    transition : all 0.3s;
+    box-shadow : 2px 10px 10px -1px rgba(0,0,0,0.17);
+    -webkit-box-shadow : 2px 10px 10px -1px rgba(0,0,0,0.17);
+    cursor: pointer;
+}
+
+@media(max-width : 645px){
+    .companies-details .companies .banner{
+        flex-direction: column;
+        align-items: center;
+        gap : 30px;
+    }
+    .companies-details .companies .banner .card{
+        width : 420px;
+    }
+}
+@media(max-width : 450px){
+    .companies-details .companies .banner .card{
+        width : 330px;
+    }
+}

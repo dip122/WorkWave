@@ -1,0 +1,106 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+*{
+  margin : 0;
+  padding : 0;
+  box-sizing: border-box;
+  font-family: 'system-ui', 'Segoe UI','Avenir', 'Arial', sans-serif;
+  color-scheme: light dark;
+}
+html{
+  font-size : 56.5%;
+}
+
+:root{
+  --bg-color : #f4f3ff;
+  --btn-color : #646cff;
+  --dark-color : #242424;
+  --helper-color : #99b9ff;
+}
+
+body{
+  margin : 0;
+  /* min-width: 32rem; */
+  min-height : 100vh;
+}
+
+h1{
+  font-size : 5.4rem;
+  line-height : 1.1;
+  font-weight: bold;
+
+}
+p,
+li,
+label,
+input,
+textarea{
+  font-size : 1.8rem;
+  line-height : 1.56;
+  letter-spacing: 0.1rem;
+  word-spacing: 0.06rem;
+}
+
+li{
+  list-style: none;
+}
+
+a {
+  font-weight : 500;
+  font-size : 1.8rem;
+  letter-spacing: 0.1rem;
+  color : var(--btn-color);
+  text-decoration: inherit;
+}
+
+.container{
+  max-width: 140rem;
+  padding : 4rem 2.4rem;
+  margin : 0 auto;
+}
+
+.grid{
+  display : grid;
+  gap : 6.4rem;
+}
+.grid-two-cols{
+  grid-template-columns: repeat(2,1fr);
+}
+
+/* module rules / reusable component in all my projects UI */
+
+button{
+  text-transform: capitalize;
+  padding : 1rem 2.2rem;
+  font-size : 1.7rem;
+  font-weight : 500;
+  background-color: var(--btn-color);
+  border-radius: 0.8rem;
+  border: .1rem solid transparent;
+  cursor: pointer;
+  letter-spacing: 0.1rem;
+  transition-duration: 0.4s;
+  outline:inherit 
+}
+button:hover{
+  outline:none;
+}
+
+/* states rules */
+/* button:hover{
+  box-shadow: inset 0 0 0 0.2rem var(--bg-color);
+} */
+
+a:hover,
+a.active{
+  color : #535bf2;
+}
+
+
+
+/* CSS comment block */
+

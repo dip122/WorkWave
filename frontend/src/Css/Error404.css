@@ -1,0 +1,36 @@
+.page-not-found{
+    display : flex;
+    justify-content: center;
+    align-items: center;
+    padding : 50px;
+}
+.page-not-found .content{
+    display : flex;
+    justify-content: space-between;
+    align-items: center;
+    gap : 35px;
+}
+
+.page-not-found .content img{
+    height : 500px;
+    width : 550px;
+}
+.page-not-found .content button{
+    height : 80px;
+}
+
+@media(max-width: 650px){
+    .page-not-found .content{
+        flex-direction: column;
+    }
+}
+
+@media(max-width: 550px) {
+    .page-not-found .content img{
+        width : 90%;
+        height : 375px;
+    }
+    .page-not-found .content button{
+        height : 50px;
+    }
+}

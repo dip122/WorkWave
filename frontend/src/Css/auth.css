@@ -1,0 +1,86 @@
+.auth-class{
+    padding : 70px 50px 30px;
+    display : flex;
+    justify-content: center;
+    text-align: center;
+    font-size : 30px;
+    background-color: #FFCCE5;
+    flex-direction: column;
+}
+.auth-heading {
+    font-size : 35px;
+    margin-bottom: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.auth-body .auth-image img{
+    height : 400px;
+}
+
+.auth-description{
+    font-size : 17px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color : rgb(118,118,116);
+    margin-bottom: 10px;
+}
+
+.auth-body{
+    display : flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.auth-form form{
+    display : flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size : 15px;
+    padding : 20px;
+    margin-left : 60px;
+    border-radius :12px;
+    background-color: rgb(218,238,255);
+}
+
+.auth-form form .input-tag{
+    display : flex;
+    flex-direction: column;
+    gap : 4px;
+}
+
+.auth-form form .input-tag div{
+    display : flex;
+    align-items: center;
+    border-radius: 7px;
+    font-family :Georgia, 'Times New Roman', Times, serif;
+    font-size : 15px;
+    font-weight: bold;
+}
+.auth-form form .input-tag div select{
+    padding : 8px;
+    width : 250px;
+    background-color : aliceblue;
+    height : 100%;
+    border : none;
+}
+
+.auth-form form h2{
+    font-family :'Courier New', Courier, monospace;
+    font-size : 26px;
+    margin-bottom : 10px;
+}
+.auth-form form input{
+    width : 250px;
+    padding : 7px 20px;
+    margin : 10px;
+}
+
+.auth-form form input::placeholder {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.auth-form form .auth-change{
+    margin-top : 20px;
+    font-size : 16px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}

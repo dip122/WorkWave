@@ -1,0 +1,73 @@
+.jobseekercard{
+    display : flex;
+    align-items : center;
+    border-bottom: 4px solid gainsboro;
+    padding : 20px 0;
+    gap : 20px;
+    background-color: #f6b6c2;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+.jobseekercard .container{
+    display : flex;
+    flex-direction : column;
+    flex : 3;
+    gap : 5px;
+    max-width: 650px
+}
+.jobseekercard .container div{
+    font-weight : 500;
+    font-size : 15px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.jobseekercard .container div span{
+    font-weight: 700;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.jobseekercard .resume{
+    margin-right: 100px;
+    display : flex;
+    flex-direction: column;
+    position: relative;
+    height : 200px;
+    width: 200px;
+    padding : 4px 4px;
+    gap : 10px;
+}
+.jobseekercard .resume img{
+    width : 200px;
+    height : 100%;
+    position: absolute;
+    border-radius :10px;
+    left : 0;
+    top : 0;
+}
+.jobseekercard .deleteappplication-button{
+    display : flex;
+    align-items: center;
+    justify-content: center;
+    flex : 1;
+}
+.jobseekercard .deleteappplication-button button{
+    background : #d9534f;
+    color : #fff;
+    border : none;
+    padding : 10px 30px;
+    font-size : 20px;
+    font-weight: 600;
+}
+
+@media(max-width : 1000px){
+    .jobseekercard{
+        flex-direction: column;
+        /* height : auto; */
+    }
+    .jobseekercard .resume{
+        margin-right: 50px;
+    }
+}
+@media(max-width :480px){
+    .jobseekercard{
+        padding : 10px;
+    }
+}

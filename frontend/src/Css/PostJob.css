@@ -1,0 +1,261 @@
+.job_post{
+    background : #f1f3f6;
+    padding : 30px 20px;
+    min-height : 900px;
+    display : flex ;
+    align-items: center;
+    background-color : #D7DAFC
+}
+.job_post .container{
+    display : flex;
+    flex-direction: column;
+    align-items: center;
+    gap : 35px;
+    margin : 0 auto;
+    max-width : 1200px;
+    min-width : 1200px;
+}
+.job_post .container .header{
+    font-size : 30px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight : bold;
+}
+.job_post .container form{
+    display : flex;
+    flex-direction: column;
+    gap : 25px;
+    width : 100%;
+}
+
+.job_post .container form .wrapper{
+    display : flex;
+    gap : 5vw;
+    margin-bottom: 20px;
+}
+
+
+.job_post .container form input,
+.job_post .container form textarea{
+    font-size : 17px;
+    padding : 7px 4px;
+    width : 100%;
+    border : none;
+    background : transparent;
+    border-bottom: 1px solid gray;
+    margin-top : 10px;
+}
+
+.job_post .container form .wrapper select{
+    font-size : 13px;
+    /* width : 350px; */
+    border : none;
+    background : transparent;
+    border-bottom : 1px solid gray;
+    padding : 7px 4px;
+    width : 100%;
+}
+.job_post .container form .wrapper select option{
+    font-size : 15px;
+    font-weight : 500;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color : gray;
+}
+
+
+
+.job_post .container form .salary_wrapper{
+    display : flex;
+    flex-direction: column;
+    gap : 12px;
+}
+
+.job_post .container form .salary_wrapper div{
+    font-size : 16px;
+    font-weight : 300;
+    color : #d9534f;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.job_post .container form .salary_wrapper select{
+    font-size : 15px;
+    border : none;
+    background : transparent;
+    padding : 7px 4px;
+    border-bottom: 1px solid gray;
+    font-family: "sans-serif";
+    color : black;
+    font-weight : 500;
+}
+
+.job_post .container form .salary_wrapper select option{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size : 15px;
+}
+
+.job_post .container form .salary_wrapper input{
+    font-size : 15px;
+}
+
+.job_post .container form .salary_wrapper .ranged_salary{
+    display : flex;
+    gap : 5vw;
+}
+.job_post .container form .salary_wrapper .ranged_salary input{
+    font-size : 15px;
+    border : none;
+    padding : 7px 4px;
+    border-bottom : 1px solid gray;
+    background : transparent;
+}
+
+.job_post .container form input:focus,
+.job_post .container form .wrapper input:focus,
+.job_post .container form .wrapper select:focus,
+.job_post .container form .wrapper textarea:focus,
+.job_post .container form .salary_wrapper select:focus{
+    outline : none;
+}
+
+.job_post .container form .button-class button{
+    width : 20%;
+    background : #2d5649;
+    font-size : 20px;
+    padding : 10px 30px;
+    border : none;
+    color : #fff;
+    text-transform: uppercase;
+    font-weight : 600;
+    letter-spacing: 2px;
+}
+.job_post .container form .button-class{
+    display : flex;
+    justify-content: center;
+    align-items : center;
+}
+
+.skills {
+    display : flex;
+    justify-content: center;
+    align-items : center;
+    grid-gap : 10px;
+    padding : 10px;
+}
+.skills .title1 {
+    max-width : 100%;
+    font-size : 20px;
+    font-weight : 600;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.skills .title2 {
+    max-width: 100%;
+    font-size : 20px;
+    font-weight : 600;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.skills .first-para{
+    background-color: aliceblue;
+    border-radius: 30px;
+    padding : 15px;
+    width: 50%;
+    display :grid;
+    grid-template-columns: repeat(3,1fr);
+    gap : 6px;
+}
+.skills .first-para .job-div button {
+    width : 100%;
+    background-color : rgb(255, 157, 2);
+}
+.skills .second-para {
+    background-color: aliceblue;
+    border-radius: 30px;
+    width : 50%;
+    padding : 20px;
+    display : grid;
+    grid-template-columns: repeat(3,1fr);
+    gap : 6px;
+    min-height: 200px;
+}
+.skills .second-para .job-div button {
+    width : 100%;
+    background-color: rgb(255, 157, 2);
+}
+
+
+@media(max-width: 1200px){
+    .job_post .container{
+        min-width: 100%;
+    }
+    .job_post .container form .wrapper,
+    .job_post .container form .salary_wrapper,
+    .job_post .container form .salary_wrapper .ranged_salary{
+        flex-direction: column;
+        gap : 20px;
+    }
+    .job_post .container form .wrapper select{
+        width : 100%;
+    }
+}
+@media(max-width : 1000px){
+    .skills{
+        flex-direction: column;
+        width : 100%;
+    }
+    .skills .first-para{
+        width : 100%;
+    }
+    .skills .second-para {
+        width : 100%;
+    }
+}
+
+@media(max-width : 560px){
+    .skills{
+        flex-direction: column;
+        width : 100%;
+    }
+    .skills .first-para{
+        width : 100%;
+        grid-template-columns: repeat(2,1fr);
+    }
+    .skills .second-para {
+        width : 100%;
+        grid-template-columns: repeat(2,1fr);
+    }
+    .skills .first-para .job-div button {
+        font-size : 14px;
+        font-weight : 600;
+    }
+    .skills .second-para .job-div button{
+        font-size : 14px;
+        font-weight : 600;
+    }
+}
+@media(max-width : 390px){
+    .skills{
+        flex-direction: column;
+        width : 100%;
+    }
+    .skills .first-para{
+        width : 100%;
+        grid-template-columns: repeat(2,1fr);
+    }
+    .skills .second-para {
+        width : 100%;
+        grid-template-columns: repeat(2,1fr);
+    }
+    .skills .first-para .job-div button {
+        font-size : 12px;
+        font-weight : 600;
+    }
+    .skills .second-para .job-div button{
+        font-size : 12px;
+        font-weight : 600;
+    }
+}
+@media(max-width:750px){
+    .job_post .container form .button-class button{
+        width : 200px;
+    }
+}
+
+
